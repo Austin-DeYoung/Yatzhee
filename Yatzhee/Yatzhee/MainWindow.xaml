@@ -1,0 +1,67 @@
+﻿<Window x:Class="Yatzhee.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Yatzhee"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Grid x:Name="gridYatzhee" Background="White">
+        <RadioButton x:Name="radioAces" Content="Aces" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="1"/>
+        <RadioButton x:Name="radioTwos" Content="Twos" HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="2"/>
+        <RadioButton x:Name="radioThrees" Content="Threes" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="3"/>
+        <RadioButton x:Name="radioFours" Content="Fours" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="4"/>
+        <RadioButton x:Name="radioFives" Content="Fives" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="5"/>
+        <RadioButton x:Name="radioSixes" Content="Sixes" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="6"/>
+        <RadioButton x:Name="radioThreeOfAKind" Content="3 of a kind" HorizontalAlignment="Left" Margin="20,160,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="7"/>
+        <RadioButton x:Name="radioFourOfAKind" Content="4 of a kind" HorizontalAlignment="Left" Margin="20,180,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="8"/>
+        <RadioButton x:Name="radioFullHouse" Content="Full House" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="9"/>
+        <RadioButton x:Name="radioSmallStraight" Content="Sm. Straight" HorizontalAlignment="Left" Margin="20,220,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="10"/>
+        <RadioButton x:Name="radioLargeStraight" Content="Lg. Straight" HorizontalAlignment="Left" Margin="20,240,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="11"/>
+        <RadioButton x:Name="radioYatzhee" Content="YATZHEE" HorizontalAlignment="Left" Margin="20,260,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="12"/>
+        <RadioButton x:Name="radioChance" Content="Chance" HorizontalAlignment="Left" Margin="20,280,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" Tag="13"/>
+        
+        
+        <Label x:Name="lbAces" Content="X" HorizontalAlignment="Left" Margin="150,14,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbTwos" Content="X" HorizontalAlignment="Left" Margin="150,34,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbThrees" Content="X" HorizontalAlignment="Left" Margin="150,54,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbFours" Content="X" HorizontalAlignment="Left" Margin="150,74,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbFives" Content="X" HorizontalAlignment="Left" Margin="150,94,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbSixes" Content="X" HorizontalAlignment="Left" Margin="150,114,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbThreeOfAKind" Content="X" HorizontalAlignment="Left" Margin="150,154,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbFourOfAKind" Content="X" HorizontalAlignment="Left" Margin="150,174,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbFullHouse" Content="X" HorizontalAlignment="Left" Margin="150,194,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbsmallStraight" Content="X" HorizontalAlignment="Left" Margin="150,214,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbLargeStraight" Content="X" HorizontalAlignment="Left" Margin="150,234,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbYatzhee" Content="X" HorizontalAlignment="Left" Margin="150,254,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbChance" Content="X" HorizontalAlignment="Left" Margin="150,274,0,0" VerticalAlignment="Top" FontSize="16" />
+
+        <Label x:Name="lbUpperSection" Content="Upper Section" HorizontalAlignment="Left" Margin="15,-5,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="lbLowerSection" Content="Lower Section" HorizontalAlignment="Left" Margin="15,134,0,0" VerticalAlignment="Top" FontSize="16" />
+       
+        <CheckBox x:Name="chBoxDie1" Content="X" HorizontalAlignment="Left" Margin="410,20,0,0" VerticalAlignment="Top" FontSize="36" VerticalContentAlignment="Center" Checked="ChBoxDice_Checked" Unchecked="ChBoxDice_Unchecked" Tag="0" IsEnabled="False"/>
+        <CheckBox x:Name="chBoxDie2" Content="X" HorizontalAlignment="Left" Margin="410,80,0,0" VerticalAlignment="Top" FontSize="36" VerticalContentAlignment="Center" Checked="ChBoxDice_Checked" Unchecked="ChBoxDice_Unchecked" Tag="1" IsEnabled="False"/>
+        <CheckBox x:Name="chBoxDie3" Content="X" HorizontalAlignment="Left" Margin="410,140,0,0" VerticalAlignment="Top" FontSize="36" VerticalContentAlignment="Center" Checked="ChBoxDice_Checked" Unchecked="ChBoxDice_Unchecked" Tag="2" IsEnabled="False"/>
+        <CheckBox x:Name="chBoxDie4" Content="X" HorizontalAlignment="Left" Margin="410,200,0,0" VerticalAlignment="Top" FontSize="36" VerticalContentAlignment="Center" Checked="ChBoxDice_Checked" Unchecked="ChBoxDice_Unchecked" Tag="3" IsEnabled="False"/>
+        <CheckBox x:Name="chBoxDie5" Content="X" HorizontalAlignment="Left" Margin="410,260,0,0" VerticalAlignment="Top" FontSize="36" VerticalContentAlignment="Center" Checked="ChBoxDice_Checked" Unchecked="ChBoxDice_Unchecked" Tag="4" IsEnabled="False"/>
+
+        <Button x:Name="btnRoll" Content="Roll" HorizontalAlignment="Left" Margin="195,20,0,0" VerticalAlignment="Top" Width="190" Height="50" FontSize="24" Click="BtnRoll_Click"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="195,85,0,0" VerticalAlignment="Top" Width="190" Height="50" FontSize="24" Click="BtnSubmit_Click" IsEnabled="False"/>
+        
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="135" Margin="195,165,0,0" VerticalAlignment="Top" Width="190">
+            <Grid x:Name="borderGrid">
+                <Label x:Name="lbUpperTotal" Content="Upper Total" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <Label x:Name="lbLowerTotal" Content="Lower Total" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <Label x:Name="lbGrandTotal" Content="Grand Total" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+                <Label x:Name="lbUpperTotalNum" Content="0" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <Label x:Name="lbLowerTotalNum" Content="0" HorizontalAlignment="Left" Margin="120,50,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <Label x:Name="lbGrandTotalNum" Content="0" HorizontalAlignment="Left" Margin="120,90,0,0" VerticalAlignment="Top" FontSize="16"/>
+            </Grid> 
+        </Border>
+        
+    </Grid>
+
+</Window>

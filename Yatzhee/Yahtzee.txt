@@ -1,0 +1,22 @@
+Yahtzee:
+
+User Interface:
+5 images that represent dice
+5 radio buttons (One for each dice to hold)
+Scorecard created with labels and radio buttons
+Textbox/Label to tally scores
+Button for rolling dice
+Button for submitting to scorecard
+
+Objects:
+
+Dice object:
+Properties -
+Number of sides on dice(6)
+Dice hold(Boolean)
+
+Methods -
+Roll dice(gives random number 1-6)
+
+Scorecard object:
+Properties - 
